@@ -13,9 +13,6 @@ def store(data):
         cur.connection.commit()
 
 
-#age_number = 1
-# while page_number < 11:
-
 #url = 'http://quotes.toscrape.com/page/'+ str(page_number) + '/'
 url = 'http://quotes.toscrape.com/'
 req = urllib.request.Request(url)
@@ -54,42 +51,4 @@ for k, x in enumerate(tags):
     data.append(tmpData)
 
 store(data)
-    #page_number = page_number + 1
-
-# page_number = 2
-# while page_number < 11:
-#     next_page = 'http://quotes.toscrape.com/page/'+ str(page_number) + '/'
-#     page_number += 1
-#     if next_page:
-#         url = base_url + next_page
-
-# if page_number < 11:
-#     page_number += 1
-#     parse(respData, pageURL)
-        # page_number = 2
-    # next_page = 'http://quotes.toscrape.com/page/'+ str(page_number) + '/'
-
-    # if page_number < 11:
-    #     page_number += 1
-    #     respData(next_page, pageURL)
-    
-    # try:
-    #     response = respData.get(parse)
-    #     content = response.text
-    #     getpage = 1
-    # except:
-    #     # proxyconnection()
-    #     getpage = 0
-#next_page = re.findall(r'')
-
-
-
-# print(data)
-
-#sys.exit()
-
-
-# store(quotes,author)
-#tag = re.findall(r'')
-#print(len(tags) )
 
